@@ -31,6 +31,7 @@ a {
     font-size: 2em;
     text-decoration: none;
     text-align: center;
+    margin: 30px;
 }
 
 a:hover {
@@ -40,6 +41,10 @@ a:hover {
 
 img {
     height: 150px;
+}
+
+#micv {
+    border-radius: 50%;
 }
 
 p {
