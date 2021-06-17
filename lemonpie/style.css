@@ -2,14 +2,9 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-footer {
-    font-size: 1.5em;
-    text-align: center;
-}
-
 #titulo {
     height: 300px;
-    background-image: url(./lemon.png);
+    background-image: url("./lemon.png");
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -23,4 +18,9 @@ h1 {
 h1,
 h2 {
     font-family: 'Pacifico', cursive;
+}
+
+footer {
+    font-size: 1.5em;
+    text-align: center;
 }
