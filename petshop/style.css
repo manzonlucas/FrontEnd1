@@ -1,4 +1,110 @@
-footer div {
-    font-size: 1.5em;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #3C2313;
+}
+
+header section {
+    color: white;
+    background-color: #222222;
+}
+
+header nav {
+    color: white;
+    background: #F0A83E;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-image: url("./images/bowl-background.png");
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+    border-bottom: 3px solid #F0A83E;
+}
+
+#banner h2,
+#banner a {
+    width: 365px;
     text-align: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+#banner h2 {
+    background-color: white;
+}
+
+#banner a {
+    width: 140px;
+    color: white;
+    background-color: #F0A83E;
+}
+
+#banner .container {
+    width: 380px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#destacados {
+    text-align: center;
+    margin: 30px;
+}
+
+#destacados img {
+    display: block;
+    margin: auto;
+}
+
+#destacados h2 {
+    font-size: 40px;
+}
+
+#destacados span {
+    margin: 20px;
+}
+
+#contacto h3 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+#suscribe {
+    background-color: #F0A83E;
+}
+
+footer {
+    color: white;
+}
+
+footer section:nth-of-type(2) {
+    background-color: #3C2313;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer section:nth-of-type(3) {
+    background-color: #222222;
 }
