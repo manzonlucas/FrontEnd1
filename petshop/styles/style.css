@@ -28,7 +28,7 @@ header nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-image: url("./images/bowl-background.png");
+    background-image: url("../images/bowl-background.png");
     background-size: cover;
     height: 400px;
     background-position: center;
