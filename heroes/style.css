@@ -28,6 +28,10 @@ main {
     margin: auto;
 }
 
+body {
+    height: 1500px;
+}
+
 .container {
     display: inline-block;
     position: relative;
@@ -83,4 +87,16 @@ main {
     background-color: #00669F;
     padding: 25px 40px;
     margin: 20px auto;
+}
+
+footer p {
+    background-color: #00669F;
+    color: white;
+    padding: 25px 40px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
 }
