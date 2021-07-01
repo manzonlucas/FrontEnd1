@@ -14,89 +14,131 @@
 }
 
 header {
-    background-color: #00669F;
-    height: 100px;
-    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.24);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
-header h1 {
-    padding: 31px;
+h1 {
+    background-color: #00669F;
+    height: 50px;
+    line-height: 50px;
+    padding: 30px;
+    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.24);
 }
 
 main {
     width: 80%;
     margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80vh;
 }
 
-body {
-    height: 1500px;
-}
-
-.container {
-    display: inline-block;
+section {
+    width: 400px;
+    height: 700px;
+    margin: 30px;
     position: relative;
-    width: 300px;
     background-color: #F3F3F3;
-    margin: 150px 30px 0px;
     text-align: center;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
-.container .background {
-    background-image: url(./images/batman-bg.png);
-    background-size: cover;
+section .background {
     height: 200px;
+    background-color: black;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.container:nth-of-type(2) .background {
+section:nth-of-type(1) .background {
+    background-image: url(./images/batman-bg.png);
+}
+
+section:nth-of-type(2) .background {
+    background-image: url(./images/wonderwoman-bg.png);
+}
+
+section:nth-of-type(3) .background {
+    background-image: url(./images/superman-bg.png);
+}
+
+section:nth-of-type(4) .background {
     background-image: url(./images/harley-bg.png);
 }
 
-.container img:nth-of-type(1) {
-    display: inline-block;
-    width: 30px;
-    position: relative;
-    bottom: 275px;
-    right: 60px;
+.background img {
+    padding: 15px;
 }
 
-.container img:nth-of-type(2) {
-    width: 120px;
+section>img {
+    width: 200px;
     border-radius: 50%;
     position: relative;
-    bottom: 60px;
+    bottom: 100px;
+    margin-bottom: -100px;
 }
 
-.container h2 {
-    margin: 10px auto;
-    font-weight: normal;
+section>h2 {
+    margin: 20px;
 }
 
-.container p {
-    margin: 17px;
+.contenido {
+    height: 40%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.container a {
+.contenido a {
+    color: white;
+    background-color: #00669F;
     display: inline-block;
     width: 130px;
-    color: white;
-    background-color: #00669F;
-    padding: 25px 40px;
-    margin: 20px auto;
-}
-
-footer p {
-    background-color: #00669F;
-    color: white;
     padding: 25px 40px;
 }
 
 footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
+    height: auto;
+    background-image: url(../images/back2.png);
+    background-size: cover;
+    border-top: 2px solid #0077b6;
+    text-align: center
+}
+
+footer div {
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        height: 30px;
+        font-size: 30px;
+        line-height: 30px;
+        padding: 15px;
+        box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.24);
+    }
+}
+
+@media (max-width: 1280px) {
+    footer div {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
