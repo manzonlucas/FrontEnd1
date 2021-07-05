@@ -39,18 +39,19 @@ body {
     text-decoration: none;
 }
 
+.fa-bars {
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: space-around
 }
 
-nav a {
+a {
     color: white;
     text-decoration: none;
 }
-
-
-/*  */
 
 #banner {
     display: flex;
@@ -65,7 +66,7 @@ nav a {
 
 #banner h2,
 #banner a {
-    width: 365px;
+    width: 80%;
     text-align: center;
     padding: 20px 40px;
     border-radius: 10px;
@@ -83,7 +84,6 @@ nav a {
 }
 
 #banner .container {
-    width: 380px;
     margin: 50px;
     display: flex;
     flex-direction: column;
@@ -115,13 +115,16 @@ nav a {
     margin: 50px;
 }
 
-#contacto h3 {
+#productos div {
+    text-align: center;
+}
+
+#contactanos h3 {
     text-align: center;
 }
 
 h3 {
     font-size: 25px;
-    margin: 20px;
 }
 
 form {
@@ -130,8 +133,8 @@ form {
     align-items: center;
 }
 
-#contacto input {
-    width: 340px;
+#contactanos input {
+    width: 300px;
     height: 40px;
     margin: 5px;
     padding: 10px;
@@ -141,40 +144,112 @@ form {
     border-radius: 10px;
 }
 
-#contacto input::placeholder {
+#contactanos input::placeholder {
     color: white;
 }
 
-#contacto button {
+#contactanos button {
+    color: white;
+    background-color: #8A8787;
+    display: inline;
     width: 100px;
     height: 30px;
+    margin: 5px;
     font-size: 20px;
-    border-radius: 15px;
+    border: none;
+    border-radius: 10px;
 }
 
-#suscribe {
+#contactanos button:nth-of-type(2) {
     background-color: #F0A83E;
 }
 
 footer {
     color: white;
+    margin-top: 50px;
 }
 
-footer section:nth-of-type(2) {
+footer input {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+
+footer button {
+    margin: 5px;
+    padding: 10px;
+    color: white;
     background-color: #3C2313;
+    border: 0;
+    border-radius: 10px;
+}
+
+footer section:nth-of-type(1) {
+    padding: 20px;
+    background-color: #F0A83E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer section:nth-of-type(1) form {
+    display: inline-block;
 }
 
 footer i,
 footer h3 {
     font-size: 20px;
     display: inline-block;
-    padding: 20px;
 }
 
-footer form {
-    display: inline-block;
+footer section:nth-of-type(2) {
+    background-color: #3C2313;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    position: relative;
+}
+
+footer section:nth-of-type(2) img {
+    height: 30px;
+    position: relative;
+    top: 10px;
+}
+
+footer section:nth-of-type(2) p {
+    padding-left: 30px;
 }
 
 footer section:nth-of-type(3) {
     background-color: #222222;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        display: none;
+    }
+    .fa-bars {
+        display: inline-block;
+        padding: 15px;
+    }
+    .barra-nav nav {
+        display: none;
+    }
+    #banner,
+    #productos,
+    footer section:nth-of-type(1) {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer section:nth-of-type(2) {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 50px;
+    }
 }
