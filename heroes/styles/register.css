@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.descuento {
+    height: 38px;
+    background-color: #1CD1B0;
+}
+
+.descuento p {
+    padding: 10px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+h1 {
+    background-color: #00669F;
+    height: 50px;
+    line-height: 50px;
+    padding: 30px;
+    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.24);
+}
+
+nav ul {
+    background-color: #333333;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav a {
+    padding: 20px;
+    color: white;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    min-height: 75vh;
+    text-align: center;
+}
+
+
+/* REGISTER y LOGIN */
+
+h2 {
+    font-size: 72px;
+    color: #333333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input,
+select {
+    width: 45%;
+    height: 60px;
+    margin: 10px;
+}
+
+.botones {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn:nth-of-type(1) {
+    color: white;
+    background-color: #888888;
+}
+
+.btn:nth-of-type(2) {
+    color: black;
+    background-color: #1CD1B0;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-top: 2px solid #0077b6;
+    text-align: center
+}
+
+footer div {
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        height: 30px;
+        font-size: 30px;
+        line-height: 30px;
+        padding: 15px;
+        box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.24);
+    }
+}
+
+@media (max-width: 1280px) {
+    footer div {
+        width: 100%;
+        justify-content: space-around;
+    }
+}

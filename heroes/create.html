@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/create.css">
+    <title>Héroes - Crea tu propio héroe</title>
+</head>
+
+<body>
+    <div class="descuento">
+        <p>Descuentos 20%</p>
+    </div>
+    <header>
+        <h1>Héroes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./login.html">Ingresar</a></li>
+            <li><a href="./register.html">Registrarme</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Añadí tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones:</p>
+        <form action="#" method="GET">
+            <div class="container">
+                <section>
+                    <label for="name" class="label-titulo">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                </section>
+
+                <section>
+                    <label for="date" class="label-titulo">Fecha</label>
+                    <input type="date" name="date" id="date">
+                </section>
+
+                <textarea name="description" rows="10" cols="50">Agrega una descripción</textarea>
+
+                <section>
+                    <label for="species" class="label-titulo">Especie</label>
+                    <select name="species" id="species">
+                        <option value="" selected disabled>Elija su especie</option>
+                        <option value="human">Humano</option>
+                        <option value="krypto">Kryptoniano</option>
+                        <option value="amazon">Amazona</option>
+                    </select>
+                </section>
+
+                <section>
+                    <label for="picture" class="label-titulo">Agregar foto:</label>
+                    <input type="file" name="picture" id="picture">
+                </section>
+
+                <section id="poderes">
+                    <label for="" class="label-titulo">Poderes</label>
+                    <div>
+                        <input type="checkbox" id="fly" name="fly">
+                        <label for="fly">Volar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="intelligence" name="intelligence">
+                        <label for="intelligence">Superinteligencia</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="laser" name="laser">
+                        <label for="laser">Vista de rayo laser</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="money" name="money">
+                        <label for="money">Billetera gorda</label>
+                    </div>
+                </section>
+                <hr>
+
+                <section>
+                    <label for="" class="label-titulo">Tipo de personaje</label>
+                    <div>
+                        <input type="radio" id="hero" name="tipo" value="hero">
+                        <label for="hero">Héroe/Heroína</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="villain" name="tipo" value="villain">
+                        <label for="villain">Villano/Villana</label>
+                    </div>
+
+                </section>
+            </div>
+            <button type="submit">Añadir</button>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <span>
+                <i class="fab fa-instagram"></i>
+                <a href="#">Instagram</a>
+            </span>
+            <span>
+                <i class="fab fa-facebook"></i>
+                <a href="#">Facebook</a>
+            </span>
+            <span>
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/manzonlucas">GITHUB</a>
+            </span>
+            <span><a href="../index.html" id="volver">Volver al menu principal</a></span>
+        </div>
+    </footer>
+</body>
+</body>
+
+</html>

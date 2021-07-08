@@ -59,19 +59,19 @@ section .background {
 }
 
 section:nth-of-type(1) .background {
-    background-image: url(./images/batman-bg.png);
+    background-image: url(../images/batman-bg.png);
 }
 
 section:nth-of-type(2) .background {
-    background-image: url(./images/wonderwoman-bg.png);
+    background-image: url(../images/wonderwoman-bg.png);
 }
 
 section:nth-of-type(3) .background {
-    background-image: url(./images/superman-bg.png);
+    background-image: url(../images/superman-bg.png);
 }
 
 section:nth-of-type(4) .background {
-    background-image: url(./images/harley-bg.png);
+    background-image: url(../images/harley-bg.png);
 }
 
 .background img {
@@ -109,8 +109,9 @@ section>h2 {
 }
 
 footer {
+    bottom: 0;
+    width: 100%;
     height: auto;
-    background-image: url(../images/back2.png);
     background-size: cover;
     border-top: 2px solid #0077b6;
     text-align: center
