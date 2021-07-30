@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+}
+
+:root {
+    /* --primary-color: #8F322F; */
+    --primary-color: #BA181B;
+    --secondary-color: #F5F3F4;
+}
+
+html {
+    background-image: url(./images/ac-background.png);
+    background-size: contain;
+}
+
+header {
+    background-color: #0B090A;
+    color: var(--secondary-color);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 2px 8px 30px 2px #000000;
+    box-shadow: 2px 8px 30px 2px #000000;
+}
+
+header img.img-bg {
+    width: 250px;
+    margin: 12.5px
+}
+
+header img.img-sm {
+    display: none;
+}
+
+
+/* header img.img-sm {
+    height: 75%;
+    margin: 12.5px;
+}
+
+header img.img-bg {
+    display: none;
+} */
+
+header nav {}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li {}
+
+header nav ul a {
+    color: var(--secondary-color);
+    padding: 15px;
+    text-decoration: none
+}
+
+header nav ul a:hover {
+    text-decoration: underline;
+}
+
+main div.info-sections {
+    width: 80%;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: rgba(245, 243, 244, 0.9);
+    border-radius: 10px;
+}
+
+main section:nth-of-type(1) p {
+    text-indent: 1rem;
+    text-align: justify;
+}
+
+main h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+main hr {
+    margin: 1rem;
+}
+
+main section:nth-of-type(3)>article {
+    margin-bottom: 0.5rem;
+}
+
+main a {
+    color: #0B090A;
+    text-decoration-color: var(--primary-color);
+}
+
+main a:hover {
+    color: var(--primary-color);
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+aside .bandcamp-bg {
+    display: none;
+}
+
+
+/* aside .bandcamp-sm {} */
+
+footer {
+    background-color: #0B090A;
+    color: var(--secondary-color);
+    width: 100%;
+    -webkit-box-shadow: 2px -8px 30px 2px #000000;
+    box-shadow: 2px -8px 30px 2px #000000;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer section:nth-of-type(1) {
+    margin: 20px;
+}
+
+footer section:nth-of-type(1) a {
+    color: var(--secondary-color);
+    text-decoration-color: var(--primary-color);
+}
+
+footer ul {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+footer img:hover {
+    opacity: 0.5;
+}

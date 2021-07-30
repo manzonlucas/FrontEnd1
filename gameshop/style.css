@@ -1,0 +1,59 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main section h2::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f1ea";
+}
+
+header {}
+
+header ul {}
+
+header ul li {}
+
+
+/*  */
+
+div#top-banner {}
+
+div#top-banner p {}
+
+div#top-banner p span {}
+
+div#top-banner button {}
+
+
+/*  */
+
+main {}
+
+main h2 {}
+
+main section {}
+
+main section article img {}
+
+main section article p.price {}
+
+main section article p.cuotas {}
+
+main section article p.envio {}
+
+main section article {}
+
+main section div.categories {}
+
+footer section {}
+
+footer section img {}
+
+footer section p {}
+
+footer section div {}
+
+footer>p {}
