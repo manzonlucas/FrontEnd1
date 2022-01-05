@@ -7,52 +7,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrontEnd 1 - Lucas Manzón</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Digital House - Frontend I</h1>
-    <h2>Lucas Manzón</h2>
-    <hr>
+
+    <header>
+        <img src="./images/fotocv.jpg" alt="Foto del CV" id="fotocarnet">
+        <h1>Lucas Matías Manzón</h1>
+    </header>
+
+    <h2>Frontend I</h2>
+
     <div class="container">
 
+        <!-- fila 1 -->
+        <section class="fila-1">
+            <a href="./petshop/index.html">
+                <h2>Petshop</h2>
+                <img src="./images/logos/paw.png" alt="">
+                <p><span class="tipo-proyecto">Proyecto Final:</span> landing page responsive completa con html y css, flex, media queries.
+                </p>
+            </a>
+        </section>
 
-        <a href="./lemonpie/Recetario.html">
-            <img src="./images/logos/lemonpie.png" alt="">
-            <p>Receta de Lemon Pie</p>
-        </a>
+        <!-- fila 2 -->
+        <section class="fila-2">
+            <a href="./heroes/index.html">
+                <h2>Héroes</h2>
+                <img src="./heroes/images/batman-harley.png" alt="" class="rounded">
+                <p><span class="tipo-proyecto">Avanzando: </span>flexbox, media queries, forms.</p>
+            </a>
+        </section>
 
+        <section class="fila-2">
+            <a href="./pizzeria/index.html">
+                <h2>Pizzeria</h2>
+                <img src="./pizzeria/images/VectorPizza.png" alt="">
+                <p><span class="tipo-proyecto">Flexbox: </span> header, estructura general y footer con flexbox.</p>
+            </a>
+        </section>
 
-        <a href="./petshop/index.html">
-            <img src="./images/logos/paw.png" alt="">
-            <p>Petshop</p>
-        </a>
+        <section class="fila-2">
+            <a href="./transition-transform-keyframes/index.html">
+                <h2>Animaciones</h2>
+                <span class="spinner"></span>
+                <p><span class="tipo-proyecto">Avanzando: </span>transitions, transform, animation, keyframes, spinner.
+                </p>
+            </a>
+        </section>
 
-        <a href="./cv_propio/index.html">
-            <img src="./cv_propio/images/fotocv.jpg" alt="" id="micv">
-            <p>Mi CV</p>
-        </a>
+        <!-- fila 3 -->
+        <section class="fila-3">
+            <a href="./lemonpie/Recetario.html">
+                <h2>Receta de Lemon Pie</h2>
+                <img src="./images/logos/lemonpie.png" alt="">
+                <p><span class="tipo-proyecto">Primeros pasos:</span> elementos h, p y a, fonts, backgrounds, lists.</p>
+            </a>
+        </section>
 
-        <a href="./cv_batman/index.html">
-            <img src="./images/logos/batmanlogo.png" alt="">
-            <p>CV de Batman</p>
-        </a>
+        <section class="fila-3">
+            <a href="./cv_propio/index.html">
+                <h2>Mi CV</h2>
+                <img src="./cv_propio/images/fotocv.jpg" alt="Foto de Lucas Manzón" class="rounded">
+                <p><span class="tipo-proyecto">Primeros pasos:</span> header, sections, footer.</p>
+            </a>
+        </section>
 
-        <a href="./heroes/index.html">
-            <img src="./heroes/images/batman-harley.png" alt="">
-            <p>Héroes</p>
-        </a>
+        <section class="fila-3">
+            <a href="./cv_batman/index.html">
+                <h2>CV de Batman</h2>
+                <img src="./images/logos/batmanlogo.png" alt="">
+                <p><span class="tipo-proyecto">Primeros pasos:</span> header, sections, footer.</p>
+            </a>
+        </section>
 
-        <a href="./pizzeria/index.html">
-            <img src="./pizzeria/images/VectorPizza.png" alt="">
-            <p>Pizzeria</p>
-        </a>
-
-        <a href="./transition-transform-keyframes/index.html">
-            <img src="./transition-transform-keyframes/img/logo.svg" alt="">
-            <p>Transition/transform/keyframes</p>
-        </a>
     </div>
+
+    <footer>
+        <div>
+            <span>
+                <i class="fab fa-instagram"></i>
+                <a href="#">Instagram</a>
+            </span>
+            <span>
+                <i class="fab fa-facebook"></i>
+                <a href="#">Facebook</a>
+            </span>
+            <span>
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/manzonlucas">GITHUB</a>
+            </span>
+        </div>
+    </footer>
 </body>
 
 </html>
